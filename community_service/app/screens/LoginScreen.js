@@ -7,7 +7,7 @@ import AppTextInput from '../components/AppTextInput';
 
 import colors from '../reusable_styles/colors';
 
-function LoginScreen(props) {
+function LoginScreen({ navigation }) {
 
   const [username, setUsername] = useState();
   const [password, setPassword] = useState();
@@ -38,7 +38,10 @@ function LoginScreen(props) {
         textContentType='password'
       />
       <View style={styles.buttonsContainer}>
-        <AppButton title='Login' onPress={() => console.log('Press')} />
+        <AppButton
+          title='Login'
+          onPress={() => navigation.navigate('AppNavigator')}
+        />
       </View>
     </SafeAreaView>
   );
@@ -47,6 +50,7 @@ function LoginScreen(props) {
 const styles = StyleSheet.create({
   container: {
     padding: 10,
+
   },
   buttonsContainer: {
     paddingLeft: 20,

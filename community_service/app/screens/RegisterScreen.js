@@ -56,7 +56,11 @@ function RegisterScreen({ navigation }) {
         textContentType='password'
       />
       <View style={styles.buttonsContainer}>
-        <AppButton title='Register' onPress={() => console.log('Press')}  color='secondary'/>
+        <AppButton
+          title='Register'
+          onPress={() => navigation.navigate('AppNavigator')}
+          color='secondary'
+        />
       </View>
     </SafeAreaView>
   );
@@ -78,6 +82,9 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     marginTop: 50,
     marginBottom: 20,
+    shadowColor: '#000',
+    shadowOffset: {width: 1, height: 5},
+    shadowOpacity: 0.4,
   }
 })
 

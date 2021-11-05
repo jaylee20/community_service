@@ -6,4 +6,5 @@ export default {
   mediumGrey: '#6e6969',
   lightGrey: '#f8f4f4',
   delete: '#ff5252',
+  lightYellow: '#ffe66d',
 }

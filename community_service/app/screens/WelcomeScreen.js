@@ -21,8 +21,8 @@ function  WelcomeScreen({ navigation }) {
           source={require('../assets/lottie/72702-tree.json')}
           autoPlay
         />
-        <Text h1>
-          Build Community
+        <Text style={styles.header}>
+          Community
         </Text>
       </View>
       <View style={styles.buttonsContainer}>
@@ -44,6 +44,16 @@ const styles = StyleSheet.create({
     paddingRight: 20,
     paddingBottom: 45,
     width: '100%',
+  },
+  header: {
+    fontSize: 45,
+    textAlign: 'center',
+    marginVertical: 10,
+    fontWeight: 'bold',
+    fontFamily: 'Roboto',
+    shadowColor: '#000',
+    shadowOffset: {width: 1, height: 5},
+    shadowOpacity: 0.2,
   },
   logo: {
     width: 400,

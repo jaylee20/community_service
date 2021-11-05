@@ -2,11 +2,14 @@ const eventData =   [
   {
     id: 1,
     title: 'Bark Bark Dog Park',
-    date: '2021-10-20',
-    description: ,
+    date: 'October 23rd, 2021',
+    description: "Walk in the park",
     contactPhone: '1-800-Run-Dogo',
     contactName: 'Shop With Rob',
-    image: [
+    mainImage:[
+      require('../assets/DogLogo.jpeg'),
+    ],
+    imageCarousel: [
       require('../assets/DogLogo.jpeg'),
       require('../assets/DogPicOne.jpeg'),
       require('../assets/DogPicTwo.jpeg'),
@@ -17,11 +20,14 @@ const eventData =   [
   {
     id: 2,
     title: 'Community Dog Walk',
-    date: '2021-10-20',
-    description: ,
-    contactPhone: '1-800-Pug-Walk',
+    date: 'October 23rd, 2021',
+    description: "Help set up tents and fill water!",
+    contactPhone: '1-800-Dog-Walk',
     contactName: 'SDC',
-    image: [
+    mainImage:[
+      require('../assets/SecondDogLogo.jpeg'),
+    ],
+    imageCarousel: [
       require('../assets/SecondDogLogo.jpeg'),
       require('../assets/SecondDogPicOne.jpeg'),
       require('../assets/SecondDogPicTwo.jpg'),
@@ -33,14 +39,19 @@ const eventData =   [
   {
     id: 3,
     title: 'Strut Your Mutt',
-    date: '2021-10-20',
-    description: 'This ones for you Tim',
+    date: 'October 23rd, 2021',
+    description: 'Caution: Trigger Warning',
     contactPhone: '1-800-Pos-Gres',
     contactName: 'MVP',
-    image: [
+    mainImage:[
+      require('../assets/ThirdDogLogo.jpeg'),
+    ],
+    imageCarousel: [
       require('../assets/ThirdDogLogo.jpeg'),
       require('../assets/ThirdDogPicOne.jpeg'),
       require('../assets/ThirdDogPicTwo.jpeg'),
+      require('../assets/FourthDogPicThree.jpeg'),
+      require('../assets/FourthDogPicFour.png'),
       require('../assets/ThirdDogPicThree.jpeg'),
       require('../assets/ThirdDogPicFour.png')
     ],
@@ -49,16 +60,19 @@ const eventData =   [
   {
     id: 4,
     title: 'No Tricks Just Treats',
-    date: '2021-10-20',
+    date: 'October 23rd, 2021',
     description: 'Why is creating data so hard?',
     contactPhone: '1-800-867-5309',
     contactName: 'Blue Ocean',
-    image: [
+    mainImage:[
       require('../assets/FourthDogLogo.jpeg'),
-      require('../assets/FourDogPicOne.jpeg'),
-      require('../assets/FourDogPicTwo.jpeg'),
-      require('../assets/FourDogPicThree.jpeg'),
-      require('../assets/FourDogPicFour.png')
+    ],
+    imageCarousel: [
+      require('../assets/FourthDogLogo.jpeg'),
+      require('../assets/FourthDogPicOne.jpeg'),
+      require('../assets/FourthDogPicTwo.jpeg'),
+      require('../assets/FourthDogPicThree.jpeg'),
+      require('../assets/FourthDogPicFour.png')
     ],
     location: 'tbd',
   },

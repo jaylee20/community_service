@@ -24,6 +24,9 @@ const styles = StyleSheet.create({
   },
   icon: {
     marginRight: 10,
+    shadowColor: '#000',
+    shadowOffset: {width: 1, height: 5},
+    shadowOpacity: 0.6,
   },
   textInput: {
     fontSize: 18,
