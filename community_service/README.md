@@ -31,7 +31,7 @@ Community is a mobile first application that allows users to find or organize co
 
    1. Register a Google Cloud API project and enable the Maps SDK for Android.
    2. Create an API key.
-   3. Add the API key to app.json file.
+   3. Add the API key to app.json file under the IOS and Android config section.
    4. For more information, please visit the [Expo Maps Documentation.](https://docs.expo.dev/versions/latest/sdk/map-view/)
    <p></p>
 

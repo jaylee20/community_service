@@ -46,7 +46,7 @@ function EventSelectionScreen({ navigation }) {
         <AppTextInput
           autoCapitalize='none'
           autoCorrect={false}
-          icon='baguette'
+          icon='text-search'
           onChange={ event => setEvent(event)}
           placeholder='Events...'
           textContentType='nickname'
