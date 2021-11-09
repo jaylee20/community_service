@@ -1,4 +1,4 @@
-# Community Service
+# Community
 
 ---
 
