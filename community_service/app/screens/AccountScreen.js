@@ -32,7 +32,7 @@ function AccountScreen(props) {
     <SafeAreaView style={ styles.screen }>
       <View style={ styles.container }>
         <ListItem
-          title='Thanks for listening!'
+          title='jaylee20'
           image={require('../assets/ProfilePic.png')}
         />
       </View>

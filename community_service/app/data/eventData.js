@@ -2,10 +2,12 @@ const eventData =   [
   {
     id: 1,
     title: 'Bark Bark Dog Park',
-    date: 'October 23rd, 2021',
+    date: 'November 23rd, 2021',
     description: "Walk in the park",
     contactPhone: '1-800-Run-Dogo',
-    contactName: 'Shop With Rob',
+    contactName: 'John Park',
+    latitude: 37.73687659261144,
+    longitude: -122.48309186824014,
     mainImage:[
       require('../assets/DogLogo.jpeg'),
     ],
@@ -15,15 +17,18 @@ const eventData =   [
       require('../assets/DogPicTwo.jpeg'),
       require('../assets/DogPicThree.jpeg')
     ],
-    location: 'tbd',
+    address: 'Pine Lake Park Dog Play Area',
+    city: 'San Francisco, CA 94132',
   },
   {
     id: 2,
     title: 'Community Dog Walk',
-    date: 'October 23rd, 2021',
+    date: 'November 23rd, 2021',
     description: "Help set up tents and fill water!",
     contactPhone: '1-800-Dog-Walk',
-    contactName: 'SDC',
+    contactName: 'Leslie Knope',
+    latitude: 37.76751682206931,
+    longitude: -122.5088341882896,
     mainImage:[
       require('../assets/SecondDogLogo.jpeg'),
     ],
@@ -34,15 +39,18 @@ const eventData =   [
       require('../assets/SecondDogPicThree.jpeg'),
       require('../assets/SecondDogPicFour.png')
     ],
-    location: 'tbd',
+    address: 'Beach Chalet Fields',
+    city: 'San Francisco, CA 94132',
   },
   {
     id: 3,
     title: 'Strut Your Mutt',
-    date: 'October 23rd, 2021',
-    description: 'Caution: Trigger Warning',
-    contactPhone: '1-800-Pos-Gres',
-    contactName: 'MVP',
+    date: 'November 23rd, 2021',
+    description: 'Help prepare for the event',
+    contactPhone: '1-800-844-2343',
+    contactName: 'Ron Swanson',
+    latitude: 37.79432556528364,
+    longitude: -122.48374465208423,
     mainImage:[
       require('../assets/ThirdDogLogo.jpeg'),
     ],
@@ -55,15 +63,18 @@ const eventData =   [
       require('../assets/ThirdDogPicThree.jpeg'),
       require('../assets/ThirdDogPicFour.png')
     ],
-    location: 'tbd',
+    address: 'Baker Beach',
+    city: 'San Francisco, CA 94132',
   },
   {
     id: 4,
     title: 'No Tricks Just Treats',
-    date: 'October 23rd, 2021',
-    description: 'Why is creating data so hard?',
+    date: 'November 23rd, 2021',
+    description: 'Come celebrate Halloween in Novemeber',
     contactPhone: '1-800-867-5309',
-    contactName: 'Blue Ocean',
+    contactName: 'Destiny Walker',
+    latitude: 37.80550579518829,
+    longitude: -122.42802818050333,
     mainImage:[
       require('../assets/FourthDogLogo.jpeg'),
     ],
@@ -74,7 +85,8 @@ const eventData =   [
       require('../assets/FourthDogPicThree.jpeg'),
       require('../assets/FourthDogPicFour.png')
     ],
-    location: 'tbd',
+    address: 'Golden Gate National Parks Conservancy',
+    city: 'San Francisco, CA 94132',
   },
 ]
 

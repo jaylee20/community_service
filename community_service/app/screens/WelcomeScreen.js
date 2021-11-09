@@ -7,7 +7,7 @@ import AppButton from '../components/AppButton';
 
 function  WelcomeScreen({ navigation }) {
   let [fontsLoaded] = useFonts({
-    Inter_900Black, Roboto
+    Roboto
   });
 
   return (
@@ -70,8 +70,6 @@ const styles = StyleSheet.create({
   tagLine: {
     fontFamily: 'Roboto',
     fontSize: 40,
-    // fontWeight: "bold",
-    // paddingVertical: 20,
   }
 })
 

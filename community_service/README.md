@@ -4,7 +4,7 @@
 
 ## Project Description:
 
-Community is a mobile first application that shows community service events near you.
+Community is a mobile first application that allows users to find or organize community service events in their local communities.
 
 <p></p>
 

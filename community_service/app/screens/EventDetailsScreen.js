@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Image, StyleSheet, SafeAreaView, Text, ScrollView } from 'react-native';
+import MapView, { PROVIDER_GOOGLE, Marker } from 'react-native-maps';
 
 import AppText from '../components/AppText';
 import ListItem from '../components/ListItem'
@@ -10,10 +11,10 @@ function getAspectRatio(img) {
   const data = Image.resolveAssetSource(img);
   return data.width / data.height;
 }
-
+// </Marker>
 function EventDetailsScreen({ route }) {
   const event = route.params;
-  console.log(event);
+
   return (
     <SafeAreaView>
       <View>
@@ -32,6 +33,26 @@ function EventDetailsScreen({ route }) {
           />
           )
           )}
+          {
+            <MapView
+              initialRegion={{
+                latitude: event.latitude,
+                longitude: event.longitude,
+                latitudeDelta: 0.005,
+                longitudeDelta: 0.121,
+              }}
+              provider={PROVIDER_GOOGLE}
+              style={styles.map}
+            >
+            <Marker
+              coordinate= {{
+                latitude: event.latitude,
+                longitude: event.longitude,
+              }}
+              title={ event.address }
+            />
+            </MapView>
+          }
         </ScrollView>
         <View style={ styles.detailsContainer }>
           <Text style={ styles.title }>{ event.title }</Text>
@@ -53,7 +74,10 @@ function EventDetailsScreen({ route }) {
           </View>
           <View style={ styles.container }>
             <Text style={ styles.adjText }>Location: </Text>
-            <Text style={ styles.text }>{ event.location }</Text>
+            <View>
+              <Text style={ styles.text }>{ event.address }</Text>
+              <Text style={ styles.text }>{ event.city }</Text>
+            </View>
           </View>
         </View>
       </View>
@@ -85,15 +109,19 @@ const styles = StyleSheet.create({
     borderRadius: 25,
   },
   imageContainer: {
-    // margin: 10,
     shadowColor: '#000',
     shadowOffset: {width: 1, height: 5},
     shadowOpacity: 0.7,
   },
+  map: {
+    height: 200,
+    width: 350,
+    margin: 10,
+    borderRadius: 25,
+  },
   text: {
-    fontSize: 20,
+    fontSize: 15,
     textAlign: 'center',
-    marginVertical: 10,
   },
   title: {
     fontSize: 24,

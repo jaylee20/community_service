@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, StyleSheet, Image, Text, TouchableWithoutFeedback, TouchableOpacity } from 'react-native';
 import { MaterialCommunityIcons, Ionicons } from '@expo/vector-icons'
+import MapView, { PROVIDER_GOOGLE } from 'react-native-maps';
 
 import colors from '../reusable_styles/colors';
 
@@ -57,6 +58,10 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     width: '100%',
     height: 200,
+  },
+  map: {
+    width: 100,
+    height: 100,
   },
   subtitle: {
     color: colors.secondary,

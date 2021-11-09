@@ -90,7 +90,6 @@ const styles = StyleSheet.create({
     paddingRight: 500,
   },
   dateContainer: {
-    // backgroundColor: colors.light,
     borderRadius: 25,
     flexDirection: 'row',
     width: '100%',
